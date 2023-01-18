@@ -4,8 +4,7 @@ import { useState } from "react";
 import { navigation } from "../../data/data";
 
 import { motion } from 'framer-motion';
-import { Link} from 'react-scroll';
-
+import { Link } from "react-router-dom";
 import { CiAlignRight ,CiAlignLeft } from "react-icons/ci";
 
 export function NavMobile() {
@@ -75,8 +74,7 @@ export function NavMobile() {
                     return(
                         <li key={index} className='mb-8'
                         >
-                            <Link to={item.href} smooth={true}
-                            duration={500} offset={-70} className='text-x1 cursor-pointer capitalize'>
+                            <Link to={item.href} className='text-x1 cursor-pointer capitalize'>
                                 {item.name}
                             </Link>
                         </li>

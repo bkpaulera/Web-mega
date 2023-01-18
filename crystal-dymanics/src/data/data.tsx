@@ -3,27 +3,29 @@
 export const navigation = [
     {
         name: 'home',
-        href: 'home',
+        href: '/home',
     },
     {
         name: 'about',
-        href: 'about',
+        href: '/about',
     },
     {
         name: 'services',
-        href: 'services',
+        href: '/services',
     },
     {
         name: 'contact',
-        href: 'contact',
+        href: '/contact',
     },
 ];
 
 
 //Pics 
-export const wallpapper = [
+export const people = [
     {
-        src:'../src/assets/people/people-1.jpg',
-        alt:'Image 1'
+        src:'../src/assets/wallpapper/abraham-george.jpg',
+        alt:'Image 1',
+        photo_by:'Abraham George',
+        source_img:'unsplash'
     },
 ];
