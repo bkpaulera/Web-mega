@@ -29,3 +29,15 @@ export const people = [
         source_img:'unsplash'
     },
 ];
+
+//languages
+export const lang = [
+    {
+        nativeName: 'pt-BR',
+        src:'../src/assets/Iconlanguages/brazil.png',
+    },
+    {
+        nativeName: 'en-US',
+        src:'../src/assets/Iconlanguages/usa.png',
+    }    
+];

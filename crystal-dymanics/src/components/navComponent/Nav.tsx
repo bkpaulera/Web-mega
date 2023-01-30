@@ -2,6 +2,8 @@
 import { Link } from 'react-router-dom';
 import { navigation } from '../../data/data';
 
+import LanguageSwitch from '../LanguageSwitch'
+
 export function Nav() {
 
     return (
@@ -22,6 +24,7 @@ export function Nav() {
                     );
                 })
                 }
+                <li><LanguageSwitch /></li>
             </ul>
         </nav>
     )
