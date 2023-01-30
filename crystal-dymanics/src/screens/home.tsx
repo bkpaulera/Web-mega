@@ -1,11 +1,10 @@
 
-import { Header } from "../components/Header"
+import { Hero } from "../components/Hero"
 
 export function Home(){
     return(
-        <div className="flex">
-            <Header />
-            <h1>Home</h1>
+        <div className="">
+            <Hero />
         </div>
     )
 }
