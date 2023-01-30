@@ -1,20 +1,24 @@
 
+
+
 // navigation
+
 export const navigation = [
+    
     {
-        name: 'home',
+        name: 'nav.home',
         href: '/home',
     },
     {
-        name: 'about',
+        name: 'nav.about',
         href: '/about',
     },
     {
-        name: 'services',
+        name: 'nav.services',
         href: '/services',
     },
     {
-        name: 'contact',
+        name: 'nav.contact',
         href: '/contact',
     },
 ];

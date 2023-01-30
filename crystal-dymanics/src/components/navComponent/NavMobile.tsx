@@ -6,6 +6,7 @@ import { navigation } from "../../data/data";
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import { CiAlignRight ,CiAlignLeft } from "react-icons/ci";
+import { useTranslation } from "react-i18next";
 
 export function NavMobile() {
 
@@ -37,7 +38,7 @@ export function NavMobile() {
             },
         },
     };
-
+    const {t} = useTranslation()
     return (
         <nav className="relative my-5 mx-5">
             {/*Iccon*/}
@@ -75,7 +76,7 @@ export function NavMobile() {
                         <li key={index} className='mb-8'
                         >
                             <Link to={item.href} className='text-x1 cursor-pointer capitalize'>
-                                {item.name}
+                            {t(item.name)}
                             </Link>
                         </li>
                     )
