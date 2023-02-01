@@ -2,9 +2,10 @@
 export default {
     translations: {
       home: {
-        message: 'Olá Mundo!'
+        message: 'Olá Mundo!',
       },
       nav:{
+        language:'Idioma',
         home:'Inicio',
         about:'Sobre',
         services:'Serviços',

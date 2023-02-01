@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import { CiAlignRight ,CiAlignLeft } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
+import { ModalTranslation } from "../Modal/ModalTrans";
 
 export function NavMobile() {
 
@@ -70,7 +71,7 @@ export function NavMobile() {
                 >
                     <CiAlignLeft className="w-16 h-8"/>
                 </div>
-
+                
                 {navigation.map((item, index)=> {
                     return(
                         <li key={index} className='mb-8'
@@ -81,9 +82,10 @@ export function NavMobile() {
                         </li>
                     )
                 })
-
                 }
-
+                <li className="">
+                    <ModalTranslation />
+                </li>
             </motion.ul>
         </nav>
     );

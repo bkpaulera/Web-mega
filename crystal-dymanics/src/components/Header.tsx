@@ -2,6 +2,7 @@
 import { Nav } from '../components/navComponent/Nav'
 
 import { NavMobile } from '../components/navComponent/NavMobile'
+import { ModalTranslation } from './Modal/ModalTrans';
 
 export function Header() {
     return (
@@ -13,15 +14,19 @@ export function Header() {
                     <span className="font-semibold text-xl tracking-tight">Paulera</span>
                 </div>
 
+
                 {/*Nav*/}
                 <div className='hidden lg:block md:block'>
-                    <Nav />
+                    <Nav />                        
+                    {/*Translation Op*/}
+                    
                 </div>
 
                 {/*Nav Mobile*/}
                 <div className='lg:hidden md:hidden'>
                     <NavMobile />
                 </div>
+
             </div>
         </header>
     );
