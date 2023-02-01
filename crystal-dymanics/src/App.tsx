@@ -10,7 +10,7 @@ function App() {
   const {t} = useTranslation()
   return (
     <Router>
-      <Header />
+        <Header />
       <MainRoutes />
     </Router>
   )

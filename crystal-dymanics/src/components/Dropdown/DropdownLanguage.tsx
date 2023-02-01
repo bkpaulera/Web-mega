@@ -16,7 +16,7 @@ export function ModalTranslation() {
             {/*Menu trigger*/}
             <Menu as="div" className="">
                 <Menu.Button
-                    className="flex w-full justify-center rounded bg-white px-4 py-2 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                    className="flex w-full justify-center rounded border-2 border-violet-500 bg-white px-4 py-2 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                     {t('nav.language')}
                     <CiAlignBottom
                         className="ml-2 -mr-1 h-5 w-5 text-violet-900 hover:text-violet-100"

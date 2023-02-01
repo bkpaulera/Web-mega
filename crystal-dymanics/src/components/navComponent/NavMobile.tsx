@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import { CiAlignRight ,CiAlignLeft } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
-import { ModalTranslation } from "../Modal/ModalTrans";
+import { ModalTranslation } from "../Dropdown/DropdownLanguage";
 
 export function NavMobile() {
 
