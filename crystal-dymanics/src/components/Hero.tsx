@@ -1,30 +1,32 @@
 
 import { useTranslation } from 'react-i18next'
+import { people } from '../data/data'
 
 export function Hero() {
     const { t } = useTranslation()
 
     return (
-        <div className="relative overflow-hidden bg-white">
-            <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-                <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-                    <div className="sm:max-w-lg">
-                        <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{t('home.message')}</h1>
-                        <p className="mt-4 text-xl text-gray-500">{t('home.heroText')}</p>
-                    </div>
-                    <div>
-                        <div className="mt-40">
-                            {/*<!-- Decorative image grid -->*/}
-                            <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                                <div className=" overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
-                                        alt="" className="h-full w-full object-cover object-center" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section className="bg-white m-5 rounded">
+            <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                <div className="mr-auto place-self-center lg:col-span-7">
+                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-black">
+                        {t('home.message')}
+                    </h1>
+                    <p className="max-w-2xl mb-6 font-light text-violet-900 lg:mb-8 md:text-lg lg:text-xl">
+                    {t('home.heroText')}
+                    </p>
+                    <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                        {t('home.message')}
+                        <svg className="w-5 h-5 ml-2 -mr-1" fill="currentCo lor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                        {t('home.heroText')}
+                    </a>
+                </div>
+                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                    <img src={people[0].src} alt="mockup" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

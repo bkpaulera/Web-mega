@@ -10,7 +10,8 @@ function App() {
   const {t} = useTranslation()
   return (
     <Router>
-        <Header />
+      <Header />
+      <section className='h-28 md:h-28 sm:h-16'/>
       <MainRoutes />
     </Router>
   )

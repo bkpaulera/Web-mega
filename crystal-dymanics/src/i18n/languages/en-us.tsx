@@ -12,6 +12,10 @@ export default {
       about: 'About',
       services: 'Services',
       contact: 'Contact'
+    },
+    hero:{
+      title:'',
+      textArea:'',
     }
   }
 }

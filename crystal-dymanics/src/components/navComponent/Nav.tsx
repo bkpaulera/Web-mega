@@ -5,7 +5,9 @@ import { navigation } from '../../data/data';
 import { ModalTranslation } from '../Dropdown/DropdownLanguage';
 
 export function Nav() {
+
     const {t}  = useTranslation()
+
     return (
         <nav className='transition-opacity my-10'>
             <ul className='flex space-x-8 capitalize text-[15px] md:space-x-4'>

@@ -1,9 +1,9 @@
-import LanguageSwitch from "../components/LanguageSwitch";
+
 
 export function About(){
     return(
         <div className="">
-           <LanguageSwitch />
+            <h1>Abour</h1>
         </div>
     )
 }
