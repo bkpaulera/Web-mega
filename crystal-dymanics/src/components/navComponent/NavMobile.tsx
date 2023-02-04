@@ -66,8 +66,8 @@ export function NavMobile() {
                 justify-center items-center transition-all duration-300 overflow-hidden`}>
                 {/*Close Icon*/}
                 <div 
-                    onClick={() => setIsOpen(false)}
                     className='cursor-pointer absolute top-8 right-8'
+                    onClick={() => setIsOpen(false)}
                 >
                     <CiAlignLeft className="w-16 h-8"/>
                 </div>
@@ -75,8 +75,10 @@ export function NavMobile() {
                 {navigation.map((item, index)=> {
                     return(
                         <li key={index} className='mb-8'
+                            onClick={() => setIsOpen(false)}
                         >
-                            <Link to={item.href} 
+                            <Link 
+                            to={item.href} 
                             className='text-x1 cursor-pointer capitalize
                             flex w-full justify-center rounded border-2 border-violet-500 bg-white px-4 py-2 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
                             {t(item.name)}

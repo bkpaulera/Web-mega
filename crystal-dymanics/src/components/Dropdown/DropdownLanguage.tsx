@@ -14,7 +14,7 @@ export function ModalTranslation() {
     return (
         <div>
             {/*Menu trigger*/}
-            <Menu as="div" className="">
+            <Menu as="div" className="relative">
                 <Menu.Button
                     className="flex w-full justify-center rounded border-2 border-violet-500 bg-white px-4 py-2 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                     {t('nav.language')}
