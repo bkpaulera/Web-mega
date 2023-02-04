@@ -5,7 +5,7 @@ import { NavMobile } from '../components/navComponent/NavMobile'
 
 export function Header() {
     return (
-            <header className={`$border-b backdrop-blur bg-gray-900/70 fixed w-full top-0 left-0 z-30`}>
+            <header className={`$backdrop-blur bg-gray-900/70 fixed w-full top-0 left-0 z-30`}>
                 <div className="container h-full flex items-center justify-between pr-3 px-3 rounded">
                     {/*Logo*/}
                     <div className="flex items-center flex-shrink-0 text-violet-500 mr-6">

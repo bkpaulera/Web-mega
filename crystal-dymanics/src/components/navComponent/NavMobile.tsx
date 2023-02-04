@@ -53,7 +53,7 @@ export function NavMobile() {
                 variants={circleVariants} 
                 initial='hidden'
                 animate={isOpen ? 'visible': 'hidden'}
-                className='w-4 h-4 rounded-full bg-rose-500 fixed top-0 right-0'>
+                className='w-4 h-4 rounded-full backdrop-blur-[0.1px] fixed top-0 right-0'>
 
             </motion.div>
 
@@ -76,7 +76,9 @@ export function NavMobile() {
                     return(
                         <li key={index} className='mb-8'
                         >
-                            <Link to={item.href} className='text-x1 cursor-pointer capitalize'>
+                            <Link to={item.href} 
+                            className='text-x1 cursor-pointer capitalize
+                            flex w-full justify-center rounded border-2 border-violet-500 bg-white px-4 py-2 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
                             {t(item.name)}
                             </Link>
                         </li>
