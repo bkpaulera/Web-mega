@@ -2,12 +2,18 @@
 import MainRoutes from './router'
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Header } from './components/Header';
-
+import { useEffect } from 'react'
+import { themeChange } from 'theme-change'
 import { useTranslation} from 'react-i18next';
 
 
 function App() {
   const {t} = useTranslation()
+  useEffect(() => {
+    themeChange(false)
+    // 👆 false parameter is required for react project
+  }, [])
+  
   return (
     <Router>
       <Header />
