@@ -9,7 +9,7 @@ export function Nav() {
     const { t } = useTranslation()
 
     return (
-        <nav className='transition-opacity my-10'>
+        <nav className='transition-opacity my-10 flex'>
             <ul className='flex space-x-8 capitalize md:space-x-4'>
                 {navigation.map((item, index) => {
                     return (

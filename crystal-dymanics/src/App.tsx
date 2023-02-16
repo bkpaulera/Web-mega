@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
 import { useTranslation} from 'react-i18next';
+import { Footer } from './components/footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <section className='h-28 md:h-28 sm:h-16'/>
       <MainRoutes />
+      <Footer />
     </Router>
   )
 }

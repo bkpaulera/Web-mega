@@ -21,8 +21,10 @@ export default {
     },
     languages:{
       eua:'English',
-      br:'Portuguese'
+      br:'Portuguese' 
+    },
+    footer:{
+      Copyright:'Copyright © 2023 - All right reserved by ACME Industries Ltd',
     }
-    
   }
 }

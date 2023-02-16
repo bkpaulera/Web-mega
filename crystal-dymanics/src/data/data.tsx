@@ -2,7 +2,6 @@
 
 
 // navigation
-
 export const navigation = [
     
     {
@@ -12,13 +11,8 @@ export const navigation = [
     {
         name: 'nav.about',
         href: '/about',
-    },
-    {
-        name: 'nav.services',
-        href: '/services',
-    },
+    }
 ];
-
 
 //Pics 
 export const people = [
