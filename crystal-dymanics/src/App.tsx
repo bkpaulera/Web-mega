@@ -11,7 +11,6 @@ function App() {
   const {t} = useTranslation()
   useEffect(() => {
     themeChange(false)
-    // 👆 false parameter is required for react project
   }, [])
   
   return (

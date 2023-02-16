@@ -17,10 +17,6 @@ export const navigation = [
         name: 'nav.services',
         href: '/services',
     },
-    {
-        name: 'nav.contact',
-        href: '/contact',
-    },
 ];
 
 
@@ -37,10 +33,12 @@ export const people = [
 //languages
 export const lang = [
     {
+        name:'languages.br',
         nativeName: 'pt-BR',
         src:'../src/assets/Iconlanguages/brazil.png',
     },
     {
+        name:'languages.eua',
         nativeName: 'en-US',
         src:'../src/assets/Iconlanguages/usa.png',
     }    
@@ -89,4 +87,17 @@ export const skills = [
         src:'../src/assets/IconSkills/selenium.svg',
         alt:'Selenium'
     },
+];
+
+//Themes
+export const themes = [
+        {theme:"light"},
+        {theme:"dark"},
+        {theme:"cupcake"},
+        {theme:"bumblebee"},
+        {theme:"emerald"},
+        {theme:"corporate"},
+        {theme:"synthwave"},
+        {theme:"retro"},
+        {theme:"cyberpunk"},
 ];

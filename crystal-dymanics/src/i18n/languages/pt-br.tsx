@@ -12,7 +12,11 @@ export default {
         home:'Inicio',
         about:'Sobre',
         services:'Serviços',
-        contact:'Contatos'
+        settings:'Configurações'
+      },
+      languages:{
+        eua:'Inglês',
+        br:'Português'
       }
     }
   }

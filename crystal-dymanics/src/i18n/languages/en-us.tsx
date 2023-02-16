@@ -13,11 +13,16 @@ export default {
       home: 'Home',
       about: 'About',
       services: 'Services',
-      contact: 'Contact'
+      settings: 'Settings'
     },
     hero:{
       title:'',
       textArea:'',
+    },
+    languages:{
+      eua:'English',
+      br:'Portuguese'
     }
+    
   }
 }

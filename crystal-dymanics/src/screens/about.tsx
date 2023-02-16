@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { themeChange } from 'theme-change'
 
+import {themes} from '../data/data'
 
 export function About() {
 
@@ -9,11 +10,13 @@ export function About() {
         // 👆 false parameter is required for react project
     }, [])
 
+    
     return (
-        <div className="">
-            <button className="btn glass" data-set-theme="synthwave" data-act-class="ACTIVECLASS">synthwave</button>
-            <button className="btn glass" data-set-theme="light" data-act-class="ACTIVECLASS">light</button>
-            <button className="btn glass" data-set-theme="dracula" data-act-class="ACTIVECLASS">dracula</button>
+        <div className="menu menu-vertical">
+            {themes.map((item) =>
+                <button className="btn " data-set-theme={item.theme} data-act-class="ACTIVECLASS">{item.theme}</button>
+                )
+            }
         </div>
     )
 }

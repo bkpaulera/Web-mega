@@ -4,7 +4,7 @@ import {  Route, Routes } from "react-router-dom";
 
 import { Home } from "./screens/home";
 import { About } from "./screens/about";
-import { Contact } from "./screens/contact";
+import { Settings } from "./screens/settings";
 import { Services } from "./screens/services";
 import { NotFoud } from "./screens/not-found";
 
@@ -16,7 +16,7 @@ export default function MainRoutes() {
             <Route path="/home" element={<Home />} />
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/settings" element={<Settings />} />
             <Route path="/services" element={<Services />} />
             <Route path="*" element={<NotFoud />} />
         </Routes>
