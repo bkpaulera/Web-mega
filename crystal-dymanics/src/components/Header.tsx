@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 export function Header() {
     return (
-        <header className={`$backdrop-blur bg-gray-900/70  fixed w-full top-0 left-0 z-30`}>
+        <header className='bg-gray-900/70 fixed w-full top-0 left-0 z-30'>
             <div className="navbar">
                 {/*Logo*/}
                 <div className="navbar-start">
@@ -34,8 +34,6 @@ export function Header() {
                         </Link>
                     </button>
                 </div>
-
-
             </div>
         </header>
 

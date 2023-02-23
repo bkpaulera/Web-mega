@@ -80,7 +80,7 @@ export function NavMobile() {
                             <Link 
                             to={item.href} 
                             className='text-x1 cursor-pointer capitalize
-                            flex w-full justify-center rounded border-2 border-violet-500 bg-white px-4 py-2 text-sm font-medium text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
+                            flex w-full justify-center rounded border-2 border-primary bg-secondary-content px-4 py-2 text-sm font-medium text-primary hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
                             {t(item.name)}
                             </Link>
                         </li>
