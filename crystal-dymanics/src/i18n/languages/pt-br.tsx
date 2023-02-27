@@ -10,7 +10,7 @@ export default {
       nav:{
         language:'Idioma',
         home:'Inicio',
-        about:'Sobre',
+        about:'Temas',
         services:'Serviços',
         settings:'Configurações'
       },
