@@ -11,7 +11,7 @@ export default {
     nav: {
       language: 'Language',
       home: 'Home',
-      about: 'Theme',
+      about: 'About',
       services: 'Services',
       settings: 'Settings'
     },

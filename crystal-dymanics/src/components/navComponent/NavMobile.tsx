@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import { CiAlignRight ,CiAlignLeft } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
-import { DropdownLanguage } from "../Dropdown/DropdownLanguage";
+import { ModalTranslation } from "../Dropdown/DropdownLanguage";
 
 export function NavMobile() {
 
@@ -88,7 +88,7 @@ export function NavMobile() {
                 })
                 }
                 <li className="">
-                    <DropdownLanguage />
+                    <ModalTranslation />
                 </li>
             </motion.ul>
         </nav>

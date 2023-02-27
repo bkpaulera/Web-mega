@@ -5,14 +5,14 @@ import { NavMobile } from '../components/navComponent/NavMobile'
 
 import { CiSettings } from "react-icons/ci";
 import { Link } from 'react-router-dom';
-import { DropdownLanguage } from './Dropdown/DropdownLanguage';
 
 export function Header() {
     return (
-        <header className='bg-current fixed w-full top-0 left-0 z-30'>
+        <header className='bg-gray-900/70 fixed w-full top-0 left-0 z-30'>
             <div className="navbar">
                 {/*Logo*/}
                 <div className="navbar-start">
+                    <span className="btn btn-ghost normal-case text-xl">Paulera</span>
                 </div>
 
                 {/*Nav*/}
@@ -28,7 +28,11 @@ export function Header() {
 
                 {/*Logo*/}
                 <div className="hidden lg:flex md:flex  navbar-end">
-                    <DropdownLanguage />
+                    <button className="btn btn-ghost btn-circle">
+                        <Link to={"/settings"}>
+                            <CiSettings className='h-10 w-10'/>
+                        </Link>
+                    </button>
                 </div>
             </div>
         </header>
