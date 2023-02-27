@@ -1,32 +1,29 @@
-
-import { useTranslation } from "react-i18next";
+import { I18nContext, useTranslation } from "react-i18next";
+import { useEffect, useState } from 'react'
 
 import i18next from "i18next";
 import { lang } from '../../data/data';
 
-export function ModalTranslation() {
+export function DropdownLanguage() {
 
     const { t } = useTranslation()
 
+    useEffect(() => {
+        return () => {
+
+        }
+    }, [])
+
+
     return (
-        <div className="dropdown dropdown-bottom">
-            <label tabIndex={0} className="btn m-1 border-2 border-primary">{t('nav.language')}</label>
-            <ul tabIndex={0} className="dropdown-content menu p-2 shadow btn-primary rounded-box w-52">
-                {lang.map((item) => (
-                    <li className={`${i18next.language === item.nativeName ? 'hidden' : 'text-black-500'}
-                    flex w-full rounded-md px-2 py-2 mb-1`}
-                        key={item.nativeName}
-                        onClick={() => i18next.changeLanguage(item.nativeName)}
-                    >
-                        <div className="avatar">
-                            <div className="w-5 h-5 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                <img src={item.src} />
-                            </div>
-                            <h1 className='text-primary-content'>{t(item.name)}</h1>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+        <div className="flex ">
+            <label tabIndex={0} className=" swap swap-flips avatar ">
+                <input type="checkbox" />
+                <div className="swap-on w-10 h-10" onClick={() => i18next.changeLanguage(lang[0].nativeName)}>
+                    <img src={i18next.language === lang[0].nativeName ? lang[0].src : lang[1].src} /></div>
+                <div className="swap-off w-10 h-10" onClick={() => i18next.changeLanguage(lang[1].nativeName)}>
+                    <img src={i18next.language === lang[1].nativeName ? lang[1].src : lang[0].src} /></div>
+            </label>
         </div>
     );
 }
