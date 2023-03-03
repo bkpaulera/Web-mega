@@ -1,9 +1,5 @@
-
-
-
 // navigation
 export const navigation = [
-    
     {
         name: 'nav.home',
         href: '/home',
