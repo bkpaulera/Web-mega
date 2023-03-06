@@ -13,6 +13,7 @@
     "autoprefixer": "^10.4.13",
     "build": "^0.1.4",
     "daisyui": "^2.50.1",
+    "firebase": "^9.17.2",
     "framer-motion": "^8.4.2",
     "i18next": "^22.4.9",
     "i18next-browser-languagedetector": "^7.0.1",
