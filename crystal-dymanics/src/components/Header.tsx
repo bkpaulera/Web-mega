@@ -2,8 +2,6 @@
 import { Nav } from '../components/navComponent/Nav'
 
 import { NavMobile } from '../components/navComponent/NavMobile'
-import { CiSettings } from "react-icons/ci";
-import { Link } from 'react-router-dom';
 import { DropdownLanguage } from './Dropdown/DropdownLanguage';
 
 export function Header() {
