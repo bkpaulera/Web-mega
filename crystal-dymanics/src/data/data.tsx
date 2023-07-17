@@ -4,10 +4,12 @@ export const navigation = [
         name: 'nav.home',
         href: '/home',
     },
+    /* 
     {
         name: 'nav.about',
         href: '/about',
     }
+    */
 ];
 
 //Pics 
@@ -81,13 +83,5 @@ export const skills = [
 
 //Themes
 export const themes = [
-        {theme:"light"},
-        {theme:"dark"},
-        {theme:"cupcake"},
-        {theme:"bumblebee"},
-        {theme:"emerald"},
-        {theme:"corporate"},
-        {theme:"synthwave"},
-        {theme:"retro"},
-        {theme:"cyberpunk"},
+    {theme:"lofi"},
 ];
