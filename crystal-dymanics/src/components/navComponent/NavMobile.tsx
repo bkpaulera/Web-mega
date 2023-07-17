@@ -87,9 +87,6 @@ export function NavMobile() {
                     )
                 })
                 }
-                <li className="">
-                    <DropdownLanguage />
-                </li>
             </motion.ul>
         </nav>
     );
