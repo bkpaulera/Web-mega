@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
 import { useTranslation} from 'react-i18next';
-import { Footer } from './components/footer';
+import { Footer } from './components/Footer';
 
 
 function App() {

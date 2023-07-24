@@ -22,7 +22,7 @@ export function Hero() {
 
     return (
         <section className='hero shadow-2xl'>
-            <div className='hero-content mt-20 max-w-[90%] bg-primary p-5 rounded flex-col lg:flex-row-reverse lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
+            <div className='hero-content max-w-[90%] bg-primary p-5 rounded flex-col lg:flex-row-reverse lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
                 {loading &&
                     <progress className="progress w-56" />
                 }
