@@ -16,7 +16,7 @@ export function Footer() {
                     <Link to={"https://www.linkedin.com/in/paulo-vinicius-cristovam/"}>
                         <BsLinkedin className='h-10 w-10' />
                     </Link>
-                    <Link to={"https://wa.me/5519989692815"}>
+                    <Link to={"https://wa.me/5519978036970"}>
                         <BsWhatsapp className='h-10 w-10' />
                     </Link>
                 </div>

@@ -20,7 +20,6 @@ export function Home() {
                     {t('home.textSkills')}
                 </p>
             <SwiperHero />
-            <Hero />
             </div>
     )
 }
