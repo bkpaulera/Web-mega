@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { skills } from "../data/data";
 import { Pics } from "../types/pictures";
 import * as ServicePics from '../services/picturesService/Pictures';
+import { SwiperHero } from "./Carrossel/SwiperHero";
 
 export function SkillsSection() {
     const [loading, setLoading] = useState(false);
@@ -36,6 +37,7 @@ export function SkillsSection() {
                         })}
                     </div>
                 }
+               
             </div>
         </section>
     );

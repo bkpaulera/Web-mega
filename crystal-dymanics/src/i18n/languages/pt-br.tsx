@@ -2,9 +2,9 @@
 export default {
     translations: {
       home: {
-        message: 'Seja bem vindo(a)!',
-        heroText:'A calma na luta é sempre um sinal de força e confiança, enquanto a violência, pelo contrário, é prova de fraqueza e de falta de confiança em si mesmo - Velho Samurai',
-        mySkills:'Voce deveria olhar as minhas habilidades',
+        message: 'Paulo Vinicius',
+        heroText:'Desenvolvedor Web/ Back-end / Front-end / QA / Fotógrafo',
+        mySkills:'Paulo Vinicius',
         textSkills:'Abaixo estão as minhas habilidades para desenvolvimento',
       },
       nav:{
