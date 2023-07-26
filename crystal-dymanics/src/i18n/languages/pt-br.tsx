@@ -3,7 +3,7 @@ export default {
     translations: {
       home: {
         message: 'Paulo Vinicius',
-        heroText:'Desenvolvedor Web, .NET (C#), React.js e Angular. com habilidades em QA, testes automatizados e metodologias ágeis.',
+        heroText:'Desenvolvedor Web/ Back-end / Front-end / QA / Fotógrafo',
         mySkills:'Paulo Vinicius',
         textSkills:'Abaixo estão as minhas habilidades para desenvolvimento',
       },

@@ -10,16 +10,15 @@ import {fetchImages} from './services/picturesService/Pictures';
 
 function App() {
 
-  
   useEffect(() => {
     const fetchImagesFromAPI = async () => {
       try {
-        await fetchImages();
+        //await fetchImages();
       } catch (error) {
         console.log(error);
       }
     };
-    fetchImagesFromAPI();
+    //fetchImagesFromAPI();
   }, []); 
 
   const {t} = useTranslation()

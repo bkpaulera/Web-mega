@@ -5,9 +5,10 @@ import { skills } from '../../data/data';
 import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
 import { PicsSkill } from '../../types/pictures';
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os ícones de estrelas
+import CurriculoButton from '../Buttons/CurriculoButton';
 
 // Função para renderizar as estrelas com base no nível de habilidade
-  const renderSkillStars = (skillLevel: any) => {
+  const renderSkillStars = (skillLevel:any) => {
   const fullStars = Math.floor(skillLevel);
   const halfStar = skillLevel - fullStars >= 0.5;
   const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
@@ -15,11 +16,11 @@ import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os �
   return (
     <>
       {Array.from({ length: fullStars }, (_, index) => (
-        <BsStarFill key={index} className='text-yellow-500 inline' />
+        <BsStarFill key={index} className='text-red-500 inline' />
       ))}
-      {halfStar && <BsStarHalf className='text-yellow-500 inline' />}
+      {halfStar && <BsStarHalf className='text-red-500 inline' />}
       {Array.from({ length: emptyStars }, (_, index) => (
-        <BsStar key={index} className='text-yellow-500 inline' />
+        <BsStar key={index} className='text-red-500 inline' />
       ))}
     </>
   );
@@ -29,15 +30,13 @@ export function SwiperHero() {
   const [selectedPicture, setSelectedPicture] = useState<PicsSkill | null>(null); // Estado para controlar qual imagem foi selecionada no modal
 
   return (
-    <div className=''>
+    <div className='hover:border-transparent'>
       <Swiper
         slidesPerView={3}
         freeMode={true}
         watchOverflow={true}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={false}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -46,17 +45,19 @@ export function SwiperHero() {
         modules={[Pagination, Navigation, Autoplay, FreeMode]}
         className='swiper-container overflow-visible pt-6 pr-4'
       >
+        {/*Carrosel*/}
         {skills.map((skill, index) => {
           return (
             <SwiperSlide key={index}>
               <div
-                className='swiper-slide w-auto m-[10px] cursor-pointer'
+                className='swiper-slide w-auto m-[10px] cursor-pointer p-5
+                hover:bg-zinc-300 rounded-sm'
                 onClick={() => setSelectedPicture(skill)}
               >
-                {/* Adicione um evento onClick para atualizar o estado selectedPicture com a imagem selecionada */}
+                
                 <img
                   src={skill.src}
-                  className='w-full h-auto rounded-lg shadow-2xl object-cover max-h-full' // Estilos para tornar a imagem responsiva
+                  className='w-full h-auto rounded-lg shadow-2xl object-cover max-h-full'
                   alt={`Skill ${index + 1}`}
                 />
               </div>
@@ -64,7 +65,8 @@ export function SwiperHero() {
           );
         })}
       </Swiper>
-
+      {/* CV Download */}
+      <CurriculoButton />
       {/* Modal */}
       <Transition.Root show={selectedPicture !== null} as={React.Fragment}>
         <Dialog as='div' className='fixed inset-0 overflow-y-auto z-50' onClose={() => setSelectedPicture(null)}>
@@ -97,7 +99,7 @@ export function SwiperHero() {
                     <img src={selectedPicture.src} className='w-full h-auto rounded-lg shadow-2xl object-cover max-h-full' />
                     <h3 className='mt-4 text-xl font-semibold'>{selectedPicture.name}</h3>
                     <p className='mt-2 text-sm text-gray-600'>{selectedPicture.desc}</p>
-                    <div className='mt-2 text-yellow-500'>
+                    <div className='mt-2 text-grey-800 text-xl'>
                       Nível de habilidade: {renderSkillStars(selectedPicture.skillLevel)}
                     </div>
                     {/* Outras informações da imagem, se houver */}
