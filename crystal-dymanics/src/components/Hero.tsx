@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 import { people } from '../data/data';
 import * as ServicePics from '../services/picturesService/Pictures';
 import { Pics } from '../types/pictures';

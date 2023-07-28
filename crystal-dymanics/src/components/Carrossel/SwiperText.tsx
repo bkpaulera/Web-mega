@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-
-import useEmblaCarousel from 'embla-carousel-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation, FreeMode, Autoplay } from 'swiper/modules';
 
 export function SwiperText() {
     const { t } = useTranslation();
@@ -13,7 +13,21 @@ export function SwiperText() {
                     </h1>
                 </div>
             </div>
-           
+            <Swiper
+                speed={2000}
+                pagination={false}
+                loop={true}
+                watchOverflow={true}
+                navigation={false}
+                modules={[Pagination, Navigation, Autoplay, FreeMode]}
+                className=""
+            >
+                    <SwiperSlide className="">
+                        <li className="opacity-30 font-bold whitespace-nowrap mb-4">
+                            {t('home.heroText')}
+                        </li>
+                    </SwiperSlide>
+            </Swiper>
         </div>
     );
 }
