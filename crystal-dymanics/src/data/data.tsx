@@ -101,4 +101,4 @@ export const themes = [
     {theme:"lofi"},
 ];
 
-export const curriculoLink = 'dist/assets/PauloCV.pdf';
+export const curriculoLink = '/PauloCV.pdf';
