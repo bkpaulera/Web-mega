@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import { Dialog, Transition } from '@headlessui/react';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation, FreeMode,  } from 'swiper/modules';
+import useEmblaCarousel from 'embla-carousel-react';
+
 
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os ícones de estrelas
 import { PicsSkill } from '../../types/pictures';
@@ -34,25 +34,11 @@ export function SwiperHero() {
 
   return (
     <div className='hover:border-transparent'>
-      <Swiper
-        spaceBetween={20}
-        slidesPerView={3}
-        freeMode={true}
-        watchOverflow={true}
-        loop={true}
-        pagination={false}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        navigation={false}
-        modules={[Pagination, Navigation, Autoplay, FreeMode]}
-        className='swiper-container overflow-visible pt-6 pr-4'
-      >
+      <>
         {/*Carrosel*/}
         {skills.map((skill, index) => {
           return (
-            <SwiperSlide key={index}>
+            <div key={index}>
               <div
                 className='swiper-slide w-auto m-[10px] cursor-pointer p-5
                 hover:bg-zinc-300 rounded-sm'
@@ -65,10 +51,10 @@ export function SwiperHero() {
                   alt={`Skill ${index + 1}`}
                 />
               </div>
-            </SwiperSlide>
+            </div>
           );
         })}
-      </Swiper>
+      </>
       {/* CV Download */}
       <CurriculoButton />
       {/* Modal */}
