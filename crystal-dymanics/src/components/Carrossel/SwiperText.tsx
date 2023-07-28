@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, FreeMode, Autoplay } from 'swiper/modules';
+import { Pagination, Navigation, FreeMode, Autoplay } from 'swiper';
 
 export function SwiperText() {
     const { t } = useTranslation();
@@ -14,7 +14,6 @@ export function SwiperText() {
                 </div>
             </div>
             <Swiper
-                slidesPerView={1}
                 speed={2000}
                 pagination={false}
                 loop={true}

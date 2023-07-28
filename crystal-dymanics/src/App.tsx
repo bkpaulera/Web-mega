@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 import { useEffect, useState } from 'react'
 import { themeChange } from 'theme-change'
 import { useTranslation} from 'react-i18next';
-import { Footer } from './components/Footer';
+import { Footer } from './components/footer';
 import {fetchImages} from './services/picturesService/Pictures';
 
 function App() {

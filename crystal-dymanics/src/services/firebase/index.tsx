@@ -1,6 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getStorage, ref, getMetadata } from "firebase/storage";
 
+import {initializeApp} from 'firebase/app';
+import { getStorage , ref , getMetadata} from 'firebase/storage';
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
