@@ -38,7 +38,7 @@ export function SwiperHero() {
         {/*Carrosel*/}
         {skills.map((skill, index) => {
           return (
-            <>
+            <div key={index}>
               <div
                 className='swiper-slide w-auto m-[10px] cursor-pointer p-5
                 hover:bg-zinc-300 rounded-sm'
@@ -51,7 +51,7 @@ export function SwiperHero() {
                   alt={`Skill ${index + 1}`}
                 />
               </div>
-            </>
+            </div>
           );
         })}
       </>
