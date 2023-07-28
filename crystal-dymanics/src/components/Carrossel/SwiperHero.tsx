@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+
 import { Dialog, Transition } from '@headlessui/react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { skills } from '../../data/data';
-import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
-import { PicsSkill } from '../../types/pictures';
+import { Autoplay, Pagination, Navigation, FreeMode,  } from 'swiper';
+
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os ícones de estrelas
+import { PicsSkill } from '../../types/pictures';
+import { skills } from '../../data/data';
 import CurriculoButton from '../Buttons/CurriculoButton';
 
 // Função para renderizar as estrelas com base no nível de habilidade
