@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 
 import { Dialog, Transition } from '@headlessui/react';
 
-import useEmblaCarousel from 'embla-carousel-react';
-
-
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os ícones de estrelas
 import { PicsSkill } from '../../types/pictures';
 import { skills } from '../../data/data';

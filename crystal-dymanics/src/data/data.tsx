@@ -102,3 +102,21 @@ export const themes = [
 ];
 
 export const curriculoLink = '/PauloCV.pdf';
+
+export const skillsItems = [
+  {
+    name:'Desenvolvedor Web'
+  },
+  {
+    name:'Back-end'
+  },
+  {
+    name:'Front-end'
+  },
+  {
+    name:'QA'
+  },
+  {
+    name:'Fotógrafo'
+  },
+];
