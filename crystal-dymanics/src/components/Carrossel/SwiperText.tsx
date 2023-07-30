@@ -1,19 +1,29 @@
-import { useTranslation } from "react-i18next";
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
-import useEmblaCarousel from 'embla-carousel-react';
+import { skillsItems } from '../../data/data';
 
 export function SwiperText() {
-    const { t } = useTranslation();
+
+    const items = skillsItems.map((skillsItems, index) =>
+        <div
+            className="items-center ml-4  font-extrabold max-w-2xl sm:text-3xl md:text-5xl xl:text-6xl text-gray-400"
+            data-value={index}>
+            {skillsItems.name}
+        </div>,);
+
     return (
-        <div className="container">
-            <div className="chat chat-start flex">
-                <div className="chat-bubble">
-                    <h1 className="max-w-2xl m-4 font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-                        {t('home.mySkills')}
-                    </h1>
-                </div>
-            </div>
-           
-        </div>
+        <AliceCarousel
+            autoPlay
+            autoPlayStrategy="none"
+            autoPlayInterval={1500}
+            animationDuration={1500}
+            animationType="fadeout"
+            infinite
+            touchTracking={false}
+            disableDotsControls
+            disableButtonsControls
+            items={items}
+        />
     );
 }
