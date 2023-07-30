@@ -6,6 +6,7 @@ import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os �
 import { PicsSkill } from '../../types/pictures';
 import { skills } from '../../data/data';
 import CurriculoButton from '../Buttons/CurriculoButton';
+import { SwiperImage } from './SwiperImage';
 
 // Função para renderizar as estrelas com base no nível de habilidade
   const renderSkillStars = (skillLevel:any) => {
@@ -33,24 +34,8 @@ export function SwiperHero() {
     <div className='hover:border-transparent'>
       <>
         {/*Carrosel*/}
-        {skills.map((skill, index) => {
-          return (
-            <div key={index}>
-              <div
-                className='swiper-slide w-auto m-[10px] cursor-pointer p-5
-                hover:bg-zinc-300 rounded-sm'
-                onClick={() => setSelectedPicture(skill)}
-              >
-                
-                <img
-                  src={skill.src}
-                  className='w-full h-auto rounded-lg shadow-2xl object-cover max-h-full'
-                  alt={`Skill ${index + 1}`}
-                />
-              </div>
-            </div>
-          );
-        })}
+        <SwiperImage />
+        
       </>
       {/* CV Download */}
       <CurriculoButton />
