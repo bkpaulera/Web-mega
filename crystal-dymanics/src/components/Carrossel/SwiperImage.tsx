@@ -1,13 +1,24 @@
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-import { skills } from '../../data/data';
+import React, { useState } from 'react';
 
-export function SwiperImage() {
+import AliceCarousel from 'react-alice-carousel';
+
+import 'react-alice-carousel/lib/alice-carousel.css';
+
+import { skills } from '../../data/data';
+import { PicsSkill } from '../../types/pictures';
+
+type SwiperImageProps = {
+    onClick: (picture: PicsSkill) => void;
+};
+
+export function SwiperImage({ onClick }: SwiperImageProps) {
+
     const responsive = {
         0: { items: 2 },
         568: { items: 3 },
         1024: { items: 4 },
     };
+
 
     const items = skills.map((skills, index) => {
         return (
@@ -16,6 +27,7 @@ export function SwiperImage() {
                     <div
                         className='swiper-slide w-auto m-[10px] cursor-pointer p-5
                 hover:bg-zinc-300 rounded-sm'
+                        onClick={() => onClick(skills)}
                     >
 
                         <img
