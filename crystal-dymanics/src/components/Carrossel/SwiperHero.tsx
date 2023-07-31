@@ -29,13 +29,15 @@ import { SwiperImage } from './SwiperImage';
 
 export function SwiperHero() {
   const [selectedPicture, setSelectedPicture] = useState<PicsSkill | null>(null); // Estado para controlar qual imagem foi selecionada no modal
+  const handleImageClick = (picture: PicsSkill) => {
+    setSelectedPicture(picture);
+  };
 
   return (
     <div className='hover:border-transparent'>
       <>
         {/*Carrosel*/}
-        <SwiperImage />
-        
+        <SwiperImage onClick={handleImageClick} />
       </>
       {/* CV Download */}
       <CurriculoButton />
