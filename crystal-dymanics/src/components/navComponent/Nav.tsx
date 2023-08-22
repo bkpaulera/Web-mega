@@ -9,7 +9,7 @@ export function Nav() {
 
     return (
         <nav className='justify-center'>
-            <ul className=' space-x-8 capitalize md:space-x-4'>
+            <ul className='space-x-8 capitalize md:space-x-4'>
                 {navigation.map((item, index) => {
                     return (
                         <li className='btn' key={index}>

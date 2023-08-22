@@ -4,7 +4,6 @@ import { Dialog, Transition } from '@headlessui/react';
 
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os ícones de estrelas
 import { PicsSkill } from '../../types/pictures';
-import { skills } from '../../data/data';
 import CurriculoButton from '../Buttons/CurriculoButton';
 import { SwiperImage } from './SwiperImage';
 

@@ -22,6 +22,9 @@ export const people = [
     },
 ];
 
+//Pics 
+export const profilePic = '/profilePic.jpg';
+
 //languages
 export const lang = [
     {

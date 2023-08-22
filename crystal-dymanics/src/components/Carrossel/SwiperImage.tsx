@@ -22,20 +22,16 @@ export function SwiperImage({ onClick }: SwiperImageProps) {
 
     const items = skills.map((skills, index) => {
         return (
-            <div className="item">
-                <div key={index}>
-                    <div
-                        className='swiper-slide w-auto m-[10px] cursor-pointer p-5
-                hover:bg-zinc-300 rounded-sm'
-                        onClick={() => onClick(skills)}
-                    >
-
-                        <img
-                            src={skills.src}
-                            className='w-full h-auto rounded-lg shadow-2xl object-cover max-h-full'
-                            alt={`Skill ${index + 1}`}
-                        />
-                    </div>
+            <div className='group relative' key={index}>
+                <div
+                    className='relative h-80 w-auto overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75'
+                    onClick={() => onClick(skills)}
+                >
+                    <img
+                        src={skills.src}
+                        className='h-auto w-auto object-cover object-center'
+                        alt={`Skill ${index + 1}`}
+                    />
                 </div>
             </div>);
     });
