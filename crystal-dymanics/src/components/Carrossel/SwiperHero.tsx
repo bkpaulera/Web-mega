@@ -4,8 +4,6 @@ import { Dialog, Transition } from '@headlessui/react';
 
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'; // Importe os ícones de estrelas
 import { PicsSkill } from '../../types/pictures';
-import { skills } from '../../data/data';
-import CurriculoButton from '../Buttons/CurriculoButton';
 import { SwiperImage } from './SwiperImage';
 
 // Função para renderizar as estrelas com base no nível de habilidade
@@ -39,8 +37,6 @@ export function SwiperHero() {
         {/*Carrosel*/}
         <SwiperImage onClick={handleImageClick} />
       </>
-      {/* CV Download */}
-      <CurriculoButton />
       {/* Modal */}
       <Transition.Root show={selectedPicture !== null} as={React.Fragment}>
         <Dialog as='div' className='fixed inset-0 overflow-y-auto z-50' onClose={() => setSelectedPicture(null)}>

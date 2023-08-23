@@ -22,6 +22,9 @@ export const people = [
     },
 ];
 
+//Pics 
+export const profilePic = '/profilePic.jpg';
+
 //languages
 export const lang = [
     {
@@ -102,6 +105,19 @@ export const themes = [
 ];
 
 export const curriculoLink = '/PauloCV.pdf';
+
+export const curriculoImg = [
+  {
+    link:'https://www.linkedin.com/in/paulo-vinicius-cristovam/'
+  },
+  { link:'/PauloCV.pdf'
+  },
+  { link:'https://wa.me/5519978036970'
+  },
+  { link:'https://github.com/bkpaulera'
+  },
+
+];
 
 export const skillsItems = [
   {
