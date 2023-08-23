@@ -10,7 +10,6 @@ export function Home() {
     return (
             <div className="">
             <Landing />
-            <SwiperText />
             <SwiperHero />
             </div>
     )
