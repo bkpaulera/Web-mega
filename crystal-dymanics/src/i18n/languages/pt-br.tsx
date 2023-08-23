@@ -25,7 +25,7 @@ export default {
         config:'Configurações'
       }, 
       landing:{
-        text:'Escrevo-lhe esta carta com grande entusiasmo para me apresentar como desenvolvedor web, especializado em tecnologias como .NET (C#), React.js e Angular. Possuo habilidades sólidas em QA, testes automatizados e metodologias ágeis, e estou em busca de novas oportunidades para aplicar meus conhecimentos e contribuir com o sucesso de projetos inovadores.',
+        text:'Como desenvolvedor web, sou especializado em tecnologias como .NET (C#), React.js e Angular. Possuo habilidades sólidas em QA (Quality Assurance), testes automatizados (Selenium) e metodologias ágeis, e estou em busca de novas oportunidades para aplicar meus conhecimentos e contribuir com o sucesso de projetos inovadores..',
         name:'Paulo Vinicius',
         prof:'Social Midia',
       },
