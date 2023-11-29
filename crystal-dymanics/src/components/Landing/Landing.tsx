@@ -16,11 +16,11 @@ export function Landing() {
       </div>
 
       {/* Direita */}
-      <div className="flex flex-col gap-4 m-5 flex-grow">
+      <div className="flex flex-col gap-4 m-5 flex-grow break-after-auto">
         <div className="skeleton w-full">
           <div className="diff aspect-[16/9]">
             <div className="diff-item-1">
-              <div className="bg-primary text-primary-content text-9xl font-black grid place-content-center">
+              <div className="bg-primary text-primary-content md:text-3xl lg:text-8xl font-black grid place-content-center">
                 {t("home.message")}
               </div>
             </div>
@@ -32,7 +32,7 @@ export function Landing() {
             <div className="diff-resizer"></div>
           </div>
         </div>
-        <div className="skeleton h-full w-full p-5">
+        <div className="skeleton h-full w-full p-5 ">
           <span>{t("landing.text")}</span>
         </div>
       </div>

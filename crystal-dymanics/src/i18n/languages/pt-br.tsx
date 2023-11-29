@@ -2,7 +2,7 @@ export default {
   translations: {
     home: {
       message: "Paulo Vinicius",
-      heroText: "Desenvolvedor Full stack / QA / Fotógrafo",
+      heroText: "Desenvolvedor Full stack / Fotógrafo",
       mySkills: "Paulo Vinicius",
       textSkills: "Abaixo estão as minhas habilidades para desenvolvimento",
     },
